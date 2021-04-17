@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { Bars, Times, Nav, NavBtn, NavBtnLink, NavLink, NavMenu } from './NavbarElements'
+import { Bars, Times, Nav, NavBtnLink, NavLink, NavMenu } from './NavbarElements'
 
 const Navbar = () => {
 
@@ -14,10 +14,13 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    <h1>Logo</h1>
+                    <img src='./logo.svg' alt="logo"/>
                 </NavLink>
                 {clicked ? <Times onClick={handleClick}/> : <Bars onClick={handleClick}/> }
                 <NavMenu className={clicked ? 'responsive' : ''}>
+                    <NavLink exact to ="/" activeStyle>
+                        Home
+                    </NavLink>
                     <NavLink to ="/discover" activeStyle>
                         Discover
                     </NavLink>

@@ -1,6 +1,6 @@
 .responsive{
     display:flex !important;
-    background-color:peachpuff;
+    background-color:#b2d9ed;
     flex-direction:column;
     position: absolute;
     height: 35%;
@@ -9,4 +9,5 @@
     left: 0;
     padding: 25px 0 25px 0px;
     margin-top:0;
+    transition: all 0.2s ease-in-out;
 }
